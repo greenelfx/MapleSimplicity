@@ -1,4 +1,5 @@
 <h2 class="text-center">Welcome to <?php echo $servername;?></h2>
+<hr/>
 <p>
 Hello, and welcome to <?php echo $servername; ?>. This website was created by greenelf(x), to show how maplestory websites can use modern elements, such as MySQLi, HTML5, and CSS3.
 </p>

@@ -1,4 +1,5 @@
 <?php
+	error_reporting(0);
     $earnedpoints = false;
 	$insertnew = false; 
     $time = $mysqli->real_escape_string(time());  
@@ -41,6 +42,7 @@
      
     else { ?> 
 <h2 class="text-center">Vote for <?php echo $servername; ?></h2>
+<hr/>
 <div class="alert alert-info">You can vote 1 time every 6 hours for 1 VP and 10k NX. Make sure to be logged off while voting!</div>
 <form action="?page=vote" method="post">  
 	<?php  

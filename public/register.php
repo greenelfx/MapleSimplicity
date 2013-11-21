@@ -1,4 +1,5 @@
 <h2 class="text-center">Register to <?php echo $servername; ?></h2>
+<hr/>
 <?php
 if (@$_POST["register"] != "1") {
 ?>

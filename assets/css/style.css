@@ -103,25 +103,27 @@ li#vote4nx a {
 .login{
 	width:232px;
 	height:162px;
-	background: url(../img/body/login.jpg) no-repeat;
 	margin-top: 20px;
 	margin-left: auto; 
 	margin-right: auto;
 }
-.sidecontent{
-	position: absolute;
-	margin-top:50px;
-	margin-left: 20px;
-}
-.status{
-	width:232px;
-	height:302px;
-	background: url(../img/body/server_stats.jpg) no-repeat;
-	margin-left: auto; 
-	margin-right: auto;
-	margin-top: 30px;
-}
 .row {
 	margin-left: 0;
 	margin-right: 0;
+}
+.pushdown{
+	margin-top:20px;
+}
+.panel-heading{
+	background: #eee;
+	background: #eee -moz-linear-gradient(top, rgba(255,255,255,.1) 0%, rgba(0,0,0,.1) 100%);
+	background: #eee -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,.1)), color-stop(100%,rgba(0,0,0,.1)));
+	background: #eee -webkit-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+	background: #eee -o-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+	background: #eee -ms-linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+	background: #eee linear-gradient(top, rgba(255,255,255,.1) 0%,rgba(0,0,0,.1) 100%);
+	border: 1px solid #ccc;
+}
+.panel-body {
+	background: #F4F4F4;
 }
