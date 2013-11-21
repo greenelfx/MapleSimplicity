@@ -5,8 +5,8 @@
 <meta charset="utf-8">
 	<title><?php echo $title; ?></title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
-	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+	<link rel="stylesheet" href="assets/css/style.min.css" type="text/css">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 </head>
 
 <body>

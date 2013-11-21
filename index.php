@@ -35,7 +35,7 @@ switch ($page) {
 		break;
 }
 
-include_once('templates/index-top.php');
+include_once('templates/header.php');
 include_once('templates/navbar.php');
 include_once('templates/sidebar.php'); 
 include_once($getpage.".php");

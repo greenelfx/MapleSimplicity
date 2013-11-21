@@ -1,3 +1,4 @@
+/*DO NOT USE THIS FILE FOR PRODUCTION*/
 body {
 	background: #E7E7E7 url(../img/bg.jpg) repeat-x;
 }
@@ -119,4 +120,8 @@ li#vote4nx a {
 	margin-left: auto; 
 	margin-right: auto;
 	margin-top: 30px;
+}
+.row {
+	margin-left: 0;
+	margin-right: 0;
 }
