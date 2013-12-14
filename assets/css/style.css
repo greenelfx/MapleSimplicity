@@ -37,7 +37,7 @@ body {
 /* NAVBAR */
 .navbar {
 	margin:0 auto;
-	background-image:url(../img/nav/nav.png) ;
+	background-image:url(../img/nav.png);
 	height:52px;
 	width:860px;
 }

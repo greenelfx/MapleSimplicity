@@ -27,8 +27,7 @@ switch ($page) {
 	case "vote":
 		$title = $servername." - Vote";
 		$getpage = "public/vote";
-		break;
-		
+		break;	
 	default:
 		$title = $servername."";
 		$getpage = "public/home";
