@@ -51,7 +51,7 @@ if (@$_POST["register"] != "1") {
 	$confirm_password = preg_replace("/[^A-Za-z0-9 ]/", '', $getconfirm_password); # Escape and Strip
 	$email = $mysqli->real_escape_string($_POST["memail"]);
 	$birth = "1990-01-01";
-	$ip = getRealIpAddr();
+	$ip = $_SERVER["REMOTE_ADDR"];
 	
 	$continue = false;
 	
