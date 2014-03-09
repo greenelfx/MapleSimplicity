@@ -1,6 +1,6 @@
 <?php
+session_start();
 include_once('assets/config/config.php');
-
 $page = @$_GET['page'];
 switch ($page) {
 	case null:
@@ -27,7 +27,31 @@ switch ($page) {
 	case "vote":
 		$title = $servername." - Vote";
 		$getpage = "public/vote";
+		break;
+	case "news":
+		$title = $servername." - News";
+		$getpage = "public/news";
+		break;
+	case "login":
+		$title = $servername." - Login";
+		$getpage = "public/userpanel/login";
+		break;
+	case "logout":
+		$title = $servername." - Logout";
+		$getpage = "public/userpanel/logout";
 		break;	
+	case "settings":
+		$title = $servername." - Account Settings";
+		$getpage = "public/userpanel/settings";
+		break;	
+	case "charfix":
+		$title = $servername." - Character Unstuck";
+		$getpage = "public/userpanel/charfix";
+		break;
+	case "manage_news":
+		$title = $servername." - Manage News";
+		$getpage = "public/userpanel/manage_news";
+		break;			
 	default:
 		$title = $servername."";
 		$getpage = "public/home";

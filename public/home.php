@@ -1,10 +1,17 @@
+<?php
+if(basename($_SERVER["PHP_SELF"]) == "home.php"){
+    die("403 - Access Forbidden");
+}
+if(isset($_SESSION['success'])){
+	echo "<br/><div class=\"alert alert-success\">Successfully logged in.</div>";
+	unset($_SESSION['success']);
+}
+?>
 <h2 class="text-center">Welcome to <?php echo $servername;?></h2>
 <hr/>
 <p>
 Hello, and welcome to <?php echo $servername; ?>. This website was created by greenelf(x), to show how maplestory websites can use modern elements, such as MySQLi, HTML5, and CSS3.
 </p>
-
-<div class="alert alert-info">
-	<h4><a href="/download" target="_blank">Download our Client &raquo;</a></h4>
-	It's super cool!
-</div>
+<?php
+	include ("news.php");
+?>

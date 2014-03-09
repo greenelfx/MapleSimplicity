@@ -1,4 +1,7 @@
 <?php
+	if(basename($_SERVER["PHP_SELF"]) == "vote.php"){
+		die("403 - Access Forbidden");
+	}
 	error_reporting(0);
     $earnedpoints = false;
 	$insertnew = false; 
@@ -49,7 +52,7 @@
 		if($funct_msg != '') {echo '<div class="alert alert-danger">'.$funct_msg.'</div>';}  
 		if($funct_error != '') {echo '<div class="alert alert-danger">'.$funct_error.'</div>';}  
 	?>
-	<input type="text" name="name" maxlength="15" class="form-control" placeholder="Username" required autocomplete="off" style="width:50%;"/><br/>
+	<input type="text" name="name" maxlength="15" class="form-control" placeholder="Username" required autocomplete="off"/><br/>
 	<input type="submit" name="submit" value="Submit &raquo;" class="btn btn-primary"/>
 </form> 
 <br/>

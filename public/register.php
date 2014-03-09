@@ -1,3 +1,8 @@
+<?php
+if(basename($_SERVER["PHP_SELF"]) == "register.php"){
+    die("403 - Access Forbidden");
+}
+?>
 <h2 class="text-center">Register to <?php echo $servername; ?></h2>
 <hr/>
 <?php
@@ -45,10 +50,8 @@ if (@$_POST["register"] != "1") {
 	
 	$getusername = $mysqli->real_escape_string($_POST["musername"]); # Get Username
 	$username = preg_replace("/[^A-Za-z0-9 ]/", '', $getusername); # Escape and Strip
-	$getpassword = $mysqli->real_escape_string($_POST["mpass"]); # Get Password
-	$password = preg_replace("/[^A-Za-z0-9 ]/", '', $getpassword); # Escape and Strip
-	$getconfirm_password = $mysqli->real_escape_string($_POST["mpwcheck"]); # Get Confirm Password
-	$confirm_password = preg_replace("/[^A-Za-z0-9 ]/", '', $getconfirm_password); # Escape and Strip
+	$password = $mysqli->real_escape_string($_POST["mpass"]); # Get Password
+	$confirm_password = $mysqli->real_escape_string($_POST["mpwcheck"]); # Get Confirm Password
 	$email = $mysqli->real_escape_string($_POST["memail"]);
 	$birth = "1990-01-01";
 	$ip = $_SERVER["REMOTE_ADDR"];
