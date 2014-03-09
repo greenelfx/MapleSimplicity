@@ -16,7 +16,7 @@ if(isset($_GET['id'])){
 	$av = $mysqli->query("UPDATE `website_news` SET `views` = views + 1 WHERE `id`='".$id."'");
 	echo "</p></td></tr>";
 } else {
-	echo "<h3 class=\"text-center\">".$servername." News</h2><hr/>";
+	echo "<h3 class=\"text-center\">".$servername." News</h3><hr/>";
 	$gn = $mysqli->query("SELECT * FROM `website_news` ORDER BY `id` DESC");
 	$rows = $gn->num_rows;
 	if ($rows < 1) {
@@ -40,7 +40,7 @@ if(isset($_GET['id'])){
 		echo "
 			<tr>
 				<td>
-				<a href=\"?page=news&id=".$n['id']."\">";
+				<a href=\"?page=news&amp;id=".$n['id']."\">";
 				if(strlen($title) > $maxlength){
 					echo stripslashes(shortTitle($title));
 				} else {
