@@ -18,7 +18,6 @@ else {
 		$_SESSION['admin'] = $account['webadmin'];
 		$_SESSION['success'] = 1;
 		header('Location: ?page=home');
-	echo "a";
 	}
 	else {
 		echo "
