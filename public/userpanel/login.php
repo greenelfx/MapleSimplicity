@@ -15,9 +15,11 @@ else {
 		$account = $check->fetch_assoc();
 		$_SESSION['id'] = $account['id'];
 		$_SESSION['name'] = $account['name'];
-		$_SESSION['admin'] = $account['webadmin'];
+		if($account['webadmin'] == 1) {
+			$_SESSION['admin'] = $account['webadmin'];
+		}
 		$_SESSION['success'] = 1;
-		header('Location: ?page=home');
+		redirect('?page=home');
 	}
 	else {
 		echo "

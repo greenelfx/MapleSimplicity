@@ -3,7 +3,7 @@
 $host['hostname'] = '127.0.0.1'; // Host name (Usually localhost or 127.0.0.1)
 $host['user'] = 'root'; // DB Username
 $host['password'] = ''; // DB Password
-$host['database'] = 'mapleblade'; // DB Name
+$host['database'] = 'chronicle'; // DB Name
 
 //Server Information
 $servername = 'MapleSimplicity'; // Server Name
@@ -34,4 +34,22 @@ if(basename($_SERVER["PHP_SELF"]) == "config.php"){
 //Count Online
 $countonline = $mysqli->query("SELECT * FROM accounts where loggedin = 2");
 $onlineppl = $countonline->num_rows;
+
+function redirect($url)
+{
+    if (!headers_sent())
+    {    
+        header('Location: '.$url);
+        exit;
+        }
+    else
+        {  
+        echo '<script type="text/javascript">';
+        echo 'window.location.href="'.$url.'";';
+        echo '</script>';
+        echo '<noscript>';
+        echo '<meta http-equiv="refresh" content="0;url='.$url.'" />';
+        echo '</noscript>'; exit;
+    }
+}
 ?>
