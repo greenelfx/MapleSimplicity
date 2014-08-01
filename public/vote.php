@@ -30,7 +30,7 @@
                 $redirect = true; 
             } 
         } 
-        elseif($timecalc < 21600 && $row['amount'] != '') { 
+        elseif($timecalc < $vtime && $row['amount'] != '') { 
             $funct_msg = 'You\'ve already voted within the last 6 hours!'; 
             $funct_msg .= '<br />Vote time: '. date('M d\, h:i A', $row['date']); 
         } 

@@ -23,6 +23,7 @@ $colvp = ""; // Vote Point Column Name
 $colnx = ""; // NX Column Name
 $gvp = 1; // How much VP should be given per vote?
 $gnx = 10000; // How much NX should be given per vote?
+$vtime = 86400; // How many hours (in seconds) should the vote cooldown be?
 
 ######################################################################################
 // Don't change anything from here on out!
