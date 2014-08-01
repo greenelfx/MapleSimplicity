@@ -3,7 +3,7 @@
 $host['hostname'] = '127.0.0.1'; // Host name (Usually localhost or 127.0.0.1)
 $host['user'] = 'root'; // DB Username
 $host['password'] = ''; // DB Password
-$host['database'] = 'chronicle'; // DB Name
+$host['database'] = 'moopledev'; // DB Name
 
 //Server Information
 $servername = 'MapleSimplicity'; // Server Name
@@ -19,6 +19,10 @@ $setup = "#setup"; // Maplestory Setup Link
 
 //Vote
 $vlink = "http://www.gtop100.com/maplestory";
+$colvp = ""; // Vote Point Column Name
+$colnx = ""; // NX Column Name
+$gvp = 1; // How much VP should be given per vote?
+$gnx = 10000; // How much NX should be given per vote?
 
 ######################################################################################
 // Don't change anything from here on out!
